@@ -1,0 +1,508 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    height: 100px;
+    width: 100%;
+    /* background-color: lightgreen; */
+    border-bottom: 3px solid #dadada;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background:lightseagreen;
+}
+
+.navpart2 h4{
+    color: white;
+    font-size: 1.25vw;
+}
+.nav h2{
+    padding: 3vw;
+    font-size: 3vw;
+    font-weight: 800;
+    cursor: pointer;
+    color: red;
+}
+
+#span{
+    color: red;
+}
+
+/* nav par 2 ky lia */
+
+.navpart2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 3vw;
+    font-size: 1.25vw;
+    cursor: pointer;
+}
+.navpart2 i{
+display: none;
+}
+.button{
+    font-size: 1.25vw;
+    padding: 1vw 1vw;
+   background-color: lightcoral;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+
+/* media query */
+
+
+@media (max-width:600px) {
+    .nav h2{
+        font-size: 6vw;
+        font-weight: 700;
+    }
+
+    .navpart2 i{
+
+        display: block;
+        font-size: 6vw;
+        font-weight: 800;        
+    }
+
+    .nav{
+        background-color: #73bbff;
+    }
+
+    
+
+    .navpart2 h4{
+
+        display: none;
+  
+    }
+    
+}
+
+/* main content ky lia */
+
+.content{
+    height:calc(100% - 100px);
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    padding: 5vw 4vw;
+    line-height: 4vw;
+}
+
+.left h1{
+    font-size: 3vw;
+}
+
+.left p{
+    font-size: 1.25vw;
+    font-weight: 700;
+    width: 81%;
+
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+}
+
+.right img{
+    height:500px ;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+
+    .left h1{
+    font-size: 20px;
+    line-height: 6vw;
+    }
+
+    .left p{
+        font-size: 10px;
+        width: 100%;
+        padding: 1vw;
+
+    }
+
+    .btn{
+        font-size: 10px;
+        background-color: lightskyblue;
+        color: #000;
+        border: none;
+    }
+    .button{
+        font-size: 10px;
+        background-color: rgb(3, 34, 53);
+        color: #fefefe;
+        border: none;
+    }
+    .content img{
+       height: 200px;
+       width: 100%;
+    }
+}
+/* main page ky lia */
+
+.maincontent{
+    height: 320px;
+    width: 100%;
+    background: #dadada;
+    position: relative;
+}
+
+.maincontent h1{
+    position: absolute;
+    left: 35%;
+    color: red;
+    font-size: 2vw;
+}
+.maincontent p {
+    position: absolute;
+    left: 30%;
+    top: 50px;
+    line-height: 1.25vw;
+    font-size: 1.25vw;
+    text-align: justify;
+}
+
+.maincontent button {
+    position: absolute;
+    left: 4%;
+    top: 250px;
+}
+
+/* hero scrion ky lia */
+
+.hero{
+    height: 400px;
+    width: 100%;
+    background-color:#dadada;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* photos ky lia */
+
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    height: 150px;
+    width: 150px;
+    margin: 2vw 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.hbt{
+    height: 40px;
+    width: 200px;
+    background:crimson;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hero h1{
+    color: crimson;
+    font-size: 3vw;
+}
+
+.hero p{
+    font-size: 1vw;
+    font-weight: 600;
+    
+}
+
+
+/* hero2 ky lia */
+
+.hero2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+.hero2 h1{
+    color: crimson;
+    font-size: 3vw;
+    margin-top: 5px;
+}
+.hero2 p{
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+.ratting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.div{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin:  0 10vw;
+}
+
+.paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row; 
+    height: 50px;
+    width: 100%;
+}
+
+#p1{
+    margin-left:5vw;
+    margin-top: 5px;
+    color: white;
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 4vh;
+}
+
+
+.allstars{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color:yellow
+}
+
+.heomain{
+    background-image: url(https://images.unsplash.com/photo-1608311821539-57a58f13b074?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhbnNwYXJlbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww);
+}
+
+
+/* mainpart3 ky lia */
+
+
+.mainpart3{
+    display: flex;
+    background:lightpink;
+    width: 100%;
+    height: 70vh;
+}
+
+.leftpartr3{
+    /* background: red; */
+    height: 300px;
+    width: 50%;
+}
+
+.rightpart3{ 
+    /* background:blue; */
+    height: 300px;
+    width: 50%;
+}
+
+
+.leftpartr3 img{
+    height: 60vh;
+    width: 30vw;
+    margin-left: 5vw;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+.rightpart3 h1{
+    padding-top:5vw ;
+    line-height: 5vw;
+}
+
+.rightpart3 p{
+    line-height: 2vw;
+    font-size: 1.25vw;
+    padding:  8px 0;
+    font-weight: 500;
+
+}
+
+#free{
+    color: crimson;
+}
+
+.part3btn{
+
+    height: 40px;
+    width: 200px;
+    background:crimson;
+    color: white;
+    border: none;
+    font-size: 2vw;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+
+/* footer ky lia */
+
+footer{
+    background: #212121;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* icons ky lia */
+
+.socialicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 5vh;
+    font-weight: 600;
+    margin: 5vh;
+    /* background: red; */
+    color: white;
+    width:15vw;
+    height: 10vh;
+    font-size: 20px;
+    cursor: pointer;
+}
+#fbicon{
+    font-size: 3vw;
+}
+/* footer1 ky lia */
+.footer1{
+ /* background-color: green; */
+ color:white;
+ height:50vh ;
+width: 100%;
+line-height: 5vh;
+margin-left: 10px;
+}
+.footer1 button{
+    height: 8vh;
+    width: 10vw;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 2vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+.footer1 p{
+   font-size: 3vh;
+   margin-bottom: 20px;
+}
+.footer1 h1{
+    color:lightgreen;
+ }
+/* footer2 ky lia */
+.footer2{
+    /* background-color: green; */
+    color:white;
+    height:50vh ;
+    width: 100%;
+    margin-left: 80px;
+   }
+.footer2 p{
+    line-height: 5vh;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.footer2 h1{
+    color: lightgreen;
+}
+
+   /* footer3 ky lia */
+   .footer3{
+    /* background-color: blue; */
+    color:white;
+    height:50vh ;
+    width: 100%;
+   }
+
+   .footer3 p{
+    line-height: 5vh;
+    font-size: 3vh;
+    cursor: pointer;
+   }
+   .footer3 h1{
+    color: lightgreen;
+   }
+   /* footer4 ky lia */
+   .footer4{
+    /* background-color:slateblue; */
+    color:white;
+    height:50vh ;
+    width: 100%;
+   }
+
+   .footer4 h1{
+    color: lightgreen;
+   }
+   .footer4 p{
+    line-height: 5vh;
+    font-size: 3vh;
+    cursor: pointer;
+   }
+
+/* copyright ky lia */
+   .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: white;
+    height: 50px;
+    font-size:3vh ;
+   }
